@@ -12,13 +12,13 @@
         <meta name="author" content="Serge Tahé">
       
       
-        <link rel="canonical" href="https://stahe.github.io/ar-vbscript-janv-2002/syqt-tnfydh-vbscript.html">
+        <link rel="canonical" href="https://stahe.github.io/ar-vbscript-janv-2002/syqt-tshyl-vbscript.html">
       
       
         <link rel="prev" href="mqdm.html">
       
       
-        <link rel="next" href="ssyt-brmj-vbscript.html">
+        <link rel="next" href="ssyt-lbrmj-vbscript.html">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>2. سياقات تنفيذ VBSCRIPT - مقدمة إلى VBScript</title>
+        <title>2. سياقات تشغيل VBSCRIPT - مقدمة إلى VBScript</title>
       
     
     
@@ -130,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. سياقات تنفيذ VBSCRIPT
+              2. سياقات تشغيل VBSCRIPT
             
           </span>
         </div>
@@ -348,7 +348,7 @@
   <span class="md-ellipsis">
     
   
-    2. سياقات تنفيذ VBSCRIPT
+    2. سياقات تشغيل VBSCRIPT
   
 
     
@@ -359,14 +359,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="syqt-tnfydh-vbscript.html" class="md-nav__link md-nav__link--active">
+      <a href="syqt-tshyl-vbscript.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. سياقات تنفيذ VBSCRIPT
+    2. سياقات تشغيل VBSCRIPT
   
 
     
@@ -406,7 +406,7 @@
   <a href="#22-wsh" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.2. حاوية WSH
+        2.2. الحاوية WSH
       
     </span>
   </a>
@@ -417,7 +417,7 @@
   <a href="#23-wsh" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.3. بنية البرنامج النصي WSH
+        2.3. شكل البرنامج النصي WSH
       
     </span>
   </a>
@@ -428,7 +428,7 @@
   <a href="#24-wscript" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4. كائن WSCRIPT
+        2.4. الكائن WSCRIPT
       
     </span>
   </a>
@@ -450,7 +450,7 @@
   <a href="#26-wsh" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.6. مساعدة WSH
+        2.6. يأتي برنامج المساعدة الخاص بـ WSH
       
     </span>
   </a>
@@ -472,14 +472,14 @@
   
   
     <li class="md-nav__item">
-      <a href="ssyt-brmj-vbscript.html" class="md-nav__link">
+      <a href="ssyt-lbrmj-vbscript.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. أساسيات برمجة VBScript
+    3. أساسيات البرمجة VBSCRIPT
   
 
     
@@ -499,14 +499,14 @@
   
   
     <li class="md-nav__item">
-      <a href="mlj-lkh.html" class="md-nav__link">
+      <a href="dr-lkh.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. معالجة الأخطاء
+    4. إدارة الأخطاء
   
 
     
@@ -590,57 +590,57 @@
 
 
 
-<p><a id="refheading1870932734444"></a>
-<a id="toc523634254"></a>
-<a id="toc535044778"></a></p>
-<h1 id="2-vbscript">2. <span style="color: #365f91">سياقات تنفيذ <bdi dir="ltr" class="odt-ltr-term">VBSCRIPT</bdi></span></h1>
-<p><a id="refheading1871132734444"></a>
-<a id="toc535044779"></a></p>
+<p><span id="toc535044778" name="toc535044778" class="odt-bookmark-anchor"></span>
+<span id="refheading1870932734444" name="refheading1870932734444" class="odt-bookmark-anchor"></span>
+<span id="toc523634254" name="toc523634254" class="odt-bookmark-anchor"></span></p>
+<h1 id="2-vbscript">2. <span style="color: #365f91">سياقات تشغيل <bdi dir="ltr" class="odt-ltr-term">VBSCRIPT</bdi></span></h1>
+<p><span id="toc535044779" name="toc535044779" class="odt-bookmark-anchor"></span>
+<span id="refheading1871132734444" name="refheading1871132734444" class="odt-bookmark-anchor"></span></p>
 <h2 id="21">2.1. <span style="color: #4f81bd">مقدمة</span></h2>
-<p>لا يعمل برنامج <em><bdi dir="ltr" class="odt-ltr-term">VBScript</bdi></em> مباشرة في <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> بل داخل حاوية توفر له سياق تنفيذ وعددًا من الكائنات الخاصة به. بالإضافة إلى ذلك، يمكن لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> استخدام الكائنات التي يوفرها نظام <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، والمعروفة باسم كائنات <bdi dir="ltr" class="odt-ltr-term">ActiveX.</bdi></p>
+<p>لا يتم تشغيل برنامج <em><bdi dir="ltr" class="odt-ltr-term">vbscript</bdi></em> مباشرةً في نظام <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، بل يتم تشغيله داخل حاوية توفر له سياقًا للتنفيذ وعددًا من الكائنات الخاصة به. علاوة على ذلك، يمكن لبرنامج <bdi dir="ltr" class="odt-ltr-term">vbscript</bdi> استخدام الكائنات التي يتيحها نظام <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، وهي كائنات تُسمى <bdi dir="ltr" class="odt-ltr-term">ActiveX.</bdi></p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000073E00000323F1B79BD8.png" width="605" height="262" style="display:inline-block; margin:4px;width:16.002cm;height:6.93cm;" class="odt-zoomable" data-zoom-src="images/100000000000073E00000323F1B79BD8.png" /></td></tr></table>
 
-<p>في هذا المستند، سنستخدم حاويتين: <em><bdi dir="ltr" class="odt-ltr-term">Windows Scripting Host</bdi>،</em> والمعروف اختصارًا بـ <bdi dir="ltr" class="odt-ltr-term">WSH</bdi>، ومتصفح <em><bdi dir="ltr" class="odt-ltr-term">Internet</bdi></em> <bdi dir="ltr" class="odt-ltr-term">Explorer</bdi>، الذي سيُشار إليه فيما يلي أحيانًا بـ <bdi dir="ltr" class="odt-ltr-term">IE.</bdi> وهناك العديد من الحاويات الأخرى. على سبيل المثال، تُعد تطبيقات <bdi dir="ltr" class="odt-ltr-term">MS-Office</bdi> حاويات لنسخة معدلة من لغة <bdi dir="ltr" class="odt-ltr-term">VB</bdi> تُسمى <bdi dir="ltr" class="odt-ltr-term">VBA</bdi> (<bdi dir="ltr" class="odt-ltr-term">Visual Basic for Applications</bdi>). هناك أيضًا العديد من تطبيقات <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> التي تسمح للمستخدمين بتجاوز حدود التطبيق من خلال تمكينهم من تطوير برامج تعمل داخل التطبيق وتستخدم كائناته المحددة.</p>
-<p>يلعب الحاوية التي يعمل فيها برنامج <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> دورًا حاسمًا:</p>
+<p>في هذا المستند، سنستخدم حاويتين: <em><bdi dir="ltr" class="odt-ltr-term">Windows Scripting Host</bdi></em> الذي يُعرف عمومًا باسم <bdi dir="ltr" class="odt-ltr-term">WSH</bdi>، ومتصفح <em><bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi></em> الذي يُشار إليه أحيانًا فيما يلي باسم <bdi dir="ltr" class="odt-ltr-term">IE.</bdi> وهناك العديد من الحاويات الأخرى. فعلى سبيل المثال، تُعد تطبيقات <bdi dir="ltr" class="odt-ltr-term">MS-Office</bdi> حاويات لمشتق من <bdi dir="ltr" class="odt-ltr-term">VB</bdi> يُسمى <bdi dir="ltr" class="odt-ltr-term">VBA</bdi> (<bdi dir="ltr" class="odt-ltr-term">Visual Basic for Applications</bdi>). كما توجد العديد من تطبيقات ويندوز التي تتيح لمستخدميها تجاوز حدودها من خلال السماح لهم بتطوير برامج تعمل داخل التطبيق وتستخدم الكائنات الخاصة به.</p>
+<p>يلعب الحاوية التي يتم فيها تشغيل برنامج <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> دورًا أساسيًّا:</p>
 <ul>
-<li>تختلف الكائنات التي يتيحها الحاوية لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> من حاوية إلى أخرى. على سبيل المثال، يوفر <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBS</bdi> كائنًا يُسمى <bdi dir="ltr" class="odt-ltr-term">WScript</bdi>، والذي يتيح الوصول، على سبيل المثال، إلى مشاركات الشبكة والطابعات الخاصة بجهاز المضيف. من ناحية أخرى، يوفر <bdi dir="ltr" class="odt-ltr-term">IE</bdi> لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBS</bdi> كائنًا يُسمى <bdi dir="ltr" class="odt-ltr-term">Document</bdi>، والذي يمثل مستند <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> بأكمله الذي يتم عرضه. يمكن لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBS</bdi> بعد ذلك معالجة هذا المستند. من ناحية أخرى، يوفر <bdi dir="ltr" class="odt-ltr-term">Excel</bdi> لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBA</bdi> كائنات تمثل المصنفات وأوراق العمل والمخططات، وما إلى ذلك — في الواقع، جميع الكائنات التي يتعامل معها <bdi dir="ltr" class="odt-ltr-term">Excel.</bdi></li>
-<li>بينما تمنح الكائنات الموجودة في الحاوية برنامج <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> قوته الكاملة، إلا أنها قد تحد أحيانًا من بعض جوانب وظائفه. على سبيل المثال، لا يمكن لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> الذي يعمل في متصفح <bdi dir="ltr" class="odt-ltr-term">IE</bdi> الوصول إلى قرص الجهاز المضيف لأسباب أمنية.</li>
+<li>فالكائنات التي يتيحها الحاوية لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> تختلف من حاوية إلى أخرى. وهكذا، يتيح <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBS</bdi> كائنًا يُسمى <em><bdi dir="ltr" class="odt-ltr-term">WScript</bdi></em> يتيح الوصول، على سبيل المثال، إلى الموارد المشتركة وطابعات الشبكة في الجهاز المضيف. أما <bdi dir="ltr" class="odt-ltr-term">IE</bdi>، فيوفر لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBS</bdi> كائنًا يُسمى <em><bdi dir="ltr" class="odt-ltr-term">document</bdi></em> يمثل المستند <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> المعروض بالكامل. وبذلك يصبح بإمكان برنامج <bdi dir="ltr" class="odt-ltr-term">VBS</bdi> التعامل مع هذا المستند. أما برنامج <bdi dir="ltr" class="odt-ltr-term">Excel</bdi> فيوفر لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBA</bdi> كائنات تمثل المصنفات وأوراق المصنفات والرسوم البيانية، وما إلى ذلك... أي جميع الكائنات التي يتعامل معها برنامج <bdi dir="ltr" class="odt-ltr-term">Excel.</bdi></li>
+<li>ورغم أن كائنات الحاوية تمنح برنامج <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> كامل قوته، إلا أنها قد تحد أحيانًا من بعض مجالات عمله. فعلى سبيل المثال، لا يمكن لبرنامج <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> الذي يتم تنفيذه في المتصفح <bdi dir="ltr" class="odt-ltr-term">IE</bdi> الوصول إلى القرص الصلب للجهاز المضيف، وذلك لأسباب أمنية.</li>
 </ul>
-<p>لذلك، عند مناقشة برمجة <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi>، من الضروري تحديد الحاوية التي يعمل فيها البرنامج.</p>
-<p>في نظام <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، لا تعد <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> هي اللغة الوحيدة التي يمكن استخدامها في حاويات <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> أو <bdi dir="ltr" class="odt-ltr-term">IE.</bdi> على سبيل المثال، يمكنك استخدام <bdi dir="ltr" class="odt-ltr-term">JScript</bdi> (=<bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi>) و<bdi dir="ltr" class="odt-ltr-term">PerlScript</bdi> (=<bdi dir="ltr" class="odt-ltr-term">Perl</bdi>) و<bdi dir="ltr" class="odt-ltr-term">Python</bdi>، وما إلى ذلك. تبدو العديد من هذه اللغات، للوهلة الأولى، متفوقة على <bdi dir="ltr" class="odt-ltr-term">VBScript.</bdi> ومع ذلك، تتمتع <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> ببعض المزايا الهامة:</p>
+<p>لذلك، عند الحديث عن برمجة <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi>، يجب تحديد الحاوية التي يتم تنفيذ البرنامج فيها.</p>
+<p>في نظام ويندوز، لغة <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> ليست اللغة الوحيدة التي يمكن استخدامها في الحاويات <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> أو <bdi dir="ltr" class="odt-ltr-term">IE.</bdi> فمن الممكن، على سبيل المثال، استخدام <bdi dir="ltr" class="odt-ltr-term">JScript</bdi> (=<bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi>)، أو <bdi dir="ltr" class="odt-ltr-term">PerlScript</bdi> (=<bdi dir="ltr" class="odt-ltr-term">Perl</bdi>)، أو <bdi dir="ltr" class="odt-ltr-term">Python</bdi>، ... ويبدو عدد من هذه اللغات، للوهلة الأولى، متفوقًا على <bdi dir="ltr" class="odt-ltr-term">VBScript.</bdi> لكن هذه الأخيرة تتمتع مع ذلك بمزايا جادة:</p>
 <ul>
-<li>تنتشر لغة <bdi dir="ltr" class="odt-ltr-term">VB</bdi> ومتغيراتها <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> و <bdi dir="ltr" class="odt-ltr-term">VBA</bdi> على نطاق واسع على أجهزة <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi> ويبدو أن معرفة هذه اللغة أمر ضروري.</li>
-<li>إن الكائنات المتاحة للبرنامج، وليس اللغة نفسها، هي التي تجعله قويًا. يتم توفير العديد من هذه الكائنات بواسطة الحاويات، وليس بواسطة اللغات نفسها.</li>
+<li>تنتشر لغة <bdi dir="ltr" class="odt-ltr-term">VB</bdi> ومشتقاتها <bdi dir="ltr" class="odt-ltr-term">VBSCRIPT</bdi> و<bdi dir="ltr" class="odt-ltr-term">VBA</bdi> على نطاق واسع على أجهزة ويندوز. ويبدو أن معرفة هذه اللغة أمر لا غنى عنه.</li>
+<li>إن ما يمنح البرنامج قوته هو الكائنات التي يمكنه استخدامها أكثر من اللغة التي يعمل بها. ومع ذلك، فإن العديد من هذه الكائنات يتم توفيرها بواسطة الحاويات وليس بواسطة اللغات نفسها.</li>
 </ul>
-<p>أحد عيوب <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> هو أنه غير قابل للنقل إلى أنظمة أخرى غير <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، مثل <bdi dir="ltr" class="odt-ltr-term">Unix.</bdi> في حين أن منافسيه — <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> و<bdi dir="ltr" class="odt-ltr-term">Perl</bdi> و<bdi dir="ltr" class="odt-ltr-term">Python</bdi> — قابلون للنقل. إذا كنت بحاجة إلى العمل على أنظمة غير متجانسة، فقد يكون من المفيد أو حتى ضروري استخدام نفس اللغة عبر الأنظمة المختلفة.</p>
-<p><a id="refheading1871332734444"></a>
-<a id="toc535044780"></a></p>
-<h2 id="22-wsh">2.2. <span style="color: #4f81bd">حاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi></span></h2>
-<p>تسمح حاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> (<bdi dir="ltr" class="odt-ltr-term">Windows Scripting Host</bdi>) بتشغيل البرامج المكتوبة بلغات مختلفة — مثل <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> و <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> و <bdi dir="ltr" class="odt-ltr-term">PerlScript</bdi> و <bdi dir="ltr" class="odt-ltr-term">Python</bdi> وغيرها — داخل <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi> هناك معيار يجب اتباعه لاستخدام لغة ما داخل <bdi dir="ltr" class="odt-ltr-term">WSH.</bdi> أي لغة تتوافق مع هذا المعيار مؤهلة للتنفيذ داخل <bdi dir="ltr" class="odt-ltr-term">WSH.</bdi> من المتصور أن قائمة اللغات التي تعمل في <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> قد تنمو. يوفر الحاوية للبرامج التي تنفذها كائنات تمنحها قوتها الحقيقية. وهذا يؤدي إلى طمس الفروق بين اللغات، حيث إنها تستخدم جميعها نفس مجموعة الكائنات. وبالتالي، قد يصبح اختيار لغة على أخرى مسألة تفضيل شخصي بدلاً من الأداء.</p>
-<p>يتم تشغيل البرامج في <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> باستخدام ملفين قابلين للتنفيذ: <em><bdi dir="ltr" class="odt-ltr-term">wscript.exe</bdi></em> و <em><bdi dir="ltr" class="odt-ltr-term">cscript.exe</bdi></em>. يوجد <em><bdi dir="ltr" class="odt-ltr-term">wscript.exe</bdi></em> عادةً في دليل تثبيت <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، والذي يشار إليه عادةً بـ <em>%<bdi dir="ltr" class="odt-ltr-term">windir</bdi>%</em>:</p>
+<p>من عيوب لغة <bdi dir="ltr" class="odt-ltr-term">VBSCRIPT</bdi> أنها غير قابلة للنقل إلى أنظمة أخرى غير ويندوز، مثل يونكس. في حين أن لغات منافسة لها، مثل جافا سكريبت وبيرل وبايثون، قابلة للنقل. وإذا كان علينا العمل على أنظمة متنوعة، فقد يكون من المفيد بل ومن الضروري استخدام نفس اللغة على الأنظمة المختلفة.</p>
+<p><span id="toc535044780" name="toc535044780" class="odt-bookmark-anchor"></span>
+<span id="refheading1871332734444" name="refheading1871332734444" class="odt-bookmark-anchor"></span></p>
+<h2 id="22-wsh">2.2. <span style="color: #4f81bd">الحاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi></span></h2>
+<p>يتيح الحاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> (<bdi dir="ltr" class="odt-ltr-term">Windows Scripting Host</bdi>) تنفيذ البرامج المكتوبة بلغات مختلفة داخل نظام <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، مثل: <bdi dir="ltr" class="odt-ltr-term">vbscript</bdi>، <bdi dir="ltr" class="odt-ltr-term">javascript</bdi>، <bdi dir="ltr" class="odt-ltr-term">perlscript</bdi>، <bdi dir="ltr" class="odt-ltr-term">python</bdi>، ... وهناك معيار يجب الالتزام به حتى يمكن استخدام لغة ما داخل <bdi dir="ltr" class="odt-ltr-term">WSH.</bdi> وأي لغة تلتزم بهذا المعيار تكون مؤهلة للتنفيذ داخل <bdi dir="ltr" class="odt-ltr-term">WSH.</bdi> ويمكن تصور أن القائمة السابقة للغات التي يتم تنفيذها في <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> قد تتوسع. توفر الحاوية للبرامج التي تقوم بتنفيذها كائنات تمنحها قوتها الحقيقية. وهذا يساهم في إزالة الفروق بين اللغات، حيث إنها تستخدم جميعًا نفس مجموعة الكائنات. وبالتالي، قد يصبح استخدام لغة ما بدلاً من أخرى مسألة تفضيل شخصي بحت، وليس مسألة أداء.</p>
+<p>يتم تنفيذ برنامج في <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> باستخدام ملفين قابلين للتنفيذ: <em><bdi dir="ltr" class="odt-ltr-term">wscript.exe</bdi></em> و <em><bdi dir="ltr" class="odt-ltr-term">cscript.exe</bdi></em>. يوجد <em>ملف <bdi dir="ltr" class="odt-ltr-term">wscript.exe</bdi></em> عادةً في مجلد تثبيت <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> الذي يُسمى عادةً <em>%<bdi dir="ltr" class="odt-ltr-term">windir</bdi>%</em>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-vbscript">
 <span class="odt-code-line"><span class="odt-code-line-content">C:\ &gt;echo %windir%</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">C:\WINDOWS</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">C:\&gt;dir c:\windows\wscript.exe</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">WSCRIPT  EXE       123 280  19/09/01  11:54 wscript.exe</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">L&#x27;exécutable </span><span style="font-style:italic">cscript.exe</span><span style="color:#000000"> se trouve lui sous </span><span style="font-style:italic">%windir%\command</span><span style="color:#000000"> :</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">C:\&gt;dir c:\windows\cscript.* /s</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">Répertoire de C:\WINDOWS\COMMAND</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">CSCRIPT  EXE       102 450  26/06/01  17:49 cscript.exe</span></span>
 </code></pre></div>
 
-<p>يشير الحرف &quot;w&quot; في <em><bdi dir="ltr" class="odt-ltr-term">wscript</bdi></em> إلى <em><bdi dir="ltr" class="odt-ltr-term">Windows</bdi>،</em> بينما يشير الحرف &quot;c&quot; في <em><bdi dir="ltr" class="odt-ltr-term">cscript</bdi></em> إلى <em>وحدة التحكم</em>. يمكن تشغيل البرنامج النصي باستخدام <bdi dir="ltr" class="odt-ltr-term">wscript</bdi> أو <bdi dir="ltr" class="odt-ltr-term">cscript.</bdi> ويكمن الاختلاف في كيفية عرض الرسائل على الشاشة:</p>
+<p>الحرف w في <em><bdi dir="ltr" class="odt-ltr-term">wscript</bdi></em> يشير إلى <em><bdi dir="ltr" class="odt-ltr-term">windows</bdi></em>، والحرف c في <em><bdi dir="ltr" class="odt-ltr-term">cscript</bdi></em> يشير إلى <em><bdi dir="ltr" class="odt-ltr-term">console</bdi></em>. يمكن تنفيذ البرنامج النصي باستخدام <bdi dir="ltr" class="odt-ltr-term">wscript</bdi> أو <bdi dir="ltr" class="odt-ltr-term">cscript</bdi> دون فرق. ويكمن الاختلاف في طريقة عرض الرسائل على الشاشة:</p>
 <ul>
-<li>يعرضها <bdi dir="ltr" class="odt-ltr-term">wscript</bdi> في نافذة</li>
-<li>بينما يعرضها <bdi dir="ltr" class="odt-ltr-term">cscript</bdi> على الشاشة</li>
+<li>حيث يعرضها <bdi dir="ltr" class="odt-ltr-term">wscript</bdi> في نافذة</li>
+<li>بينما يعرضها <bdi dir="ltr" class="odt-ltr-term">cscript</bdi> مباشرةً على الشاشة</li>
 </ul>
-<p>فيما يلي برنامج نصي <em>يسمى <bdi dir="ltr" class="odt-ltr-term">hello.vbs</bdi></em> يعرض <em>كلمة &quot;<bdi dir="ltr" class="odt-ltr-term">hello</bdi>&quot;</em> على الشاشة:</p>
+<p>فيما يلي برنامج نصي <em><bdi dir="ltr" class="odt-ltr-term">coucou.vbs</bdi></em> يعرض <em><bdi dir="ltr" class="odt-ltr-term">coucou</bdi></em> على الشاشة:</p>
 <p><img src="images/10000000000000AD00000019ADCAAFD4.png" width="173" height="25" style="width:4.577cm;height:0.661cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000AD00000019ADCAAFD4.png" /></p>
-<p>لنفتح نافذة <bdi dir="ltr" class="odt-ltr-term">DOS</bdi> ونشغله بالتتابع باستخدام <em><bdi dir="ltr" class="odt-ltr-term">wscript</bdi></em> و <em><bdi dir="ltr" class="odt-ltr-term">cscript</bdi></em>:</p>
+<p>لنفتح نافذة <bdi dir="ltr" class="odt-ltr-term">DOS</bdi> ونقوم بتنفيذها بالتتابع مع <em><bdi dir="ltr" class="odt-ltr-term">wscript</bdi></em> و <em><bdi dir="ltr" class="odt-ltr-term">cscript</bdi></em>:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-vbscript">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">DOS&gt;</span>wscript coucou.vbs</span></span>
 </code></pre></div>
@@ -653,22 +653,22 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>coucou
 </code></pre></div>
-<p>الفرق بين الوضعين واضح للعيان أعلاه. في هذا المستند، سنستخدم وضع وحدة التحكم <em><bdi dir="ltr" class="odt-ltr-term">cscript</bdi></em> بشكل حصري تقريبًا. هذا هو الوضع المناسب لما يُسمى بالتطبيقات &quot;الدفعية&quot;، أي التطبيقات التي لا تتطلب تفاعل المستخدم عبر لوحة المفاتيح. لاحظ نقطتين في النتائج السابقة:</p>
+<p>يظهر بوضوح أعلاه الفرق بين الوضعين. في هذا المستند، سنستخدم بشكل حصري تقريبًا وضع وحدة التحكم <em><bdi dir="ltr" class="odt-ltr-term">cscript</bdi></em>. هذا هو الوضع المناسب للتطبيقات التي تُعرف باسم &quot;التطبيقات الدفعية&quot;، أي التطبيقات التي لا تتطلب تفاعلًا مع المستخدم عبر لوحة المفاتيح. تجدر الإشارة إلى نقطتين في النتائج السابقة:</p>
 <ol>
-<li>افترضنا أن الملفين القابلين للتنفيذ <bdi dir="ltr" class="odt-ltr-term">wscript.exe</bdi> و <bdi dir="ltr" class="odt-ltr-term">cscript.exe</bdi> موجودان كلاهما في &quot;مسار&quot; الجهاز، مما يسمح بتشغيلهما بمجرد كتابة اسميهما. لو لم يكن الأمر كذلك، لكان علينا أن نكتب هنا:</li>
+<li>افترضنا أن الملفين التنفيذيين <bdi dir="ltr" class="odt-ltr-term">wscript.exe</bdi> و <bdi dir="ltr" class="odt-ltr-term">cscript.exe</bdi> موجودان كلاهما في مجلد «<bdi dir="ltr" class="odt-ltr-term">PATH</bdi>» على الجهاز، مما يسمح بتشغيلهما بمجرد كتابة اسميهما. لو لم يكن الأمر كذلك، لكان من الضروري كتابة ما يلي هنا:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">DOS</span><span class="o">&gt;</span><span class="n">c</span><span class="p">:</span><span class="o">\</span><span class="n">windows</span><span class="o">\</span><span class="n">wscript</span><span class="w"> </span><span class="n">coucou</span><span class="p">.</span><span class="n">vbs</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">DOS</span><span class="o">&gt;</span><span class="n">c</span><span class="p">:</span><span class="o">\</span><span class="n">windows</span><span class="o">\</span><span class="n">command</span><span class="o">\</span><span class="n">cscript</span><span class="w"> </span><span class="n">coucou</span><span class="p">.</span><span class="n">vbs</span>
 </code></pre></div>
 <ol>
-<li>لاحظ أن إصدار <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> المستخدم في هذا المثال وفي بقية الوثيقة هو الإصدار 5.6.</li>
+<li>تجدر الإشارة إلى أن إصدار wsh المستخدم في هذا المثال وفي بقية الوثيقة هو الإصدار 5.6.</li>
 </ol>
 <ol start="2">
-  <li>ملف مصدر البرنامج النصي له الامتداد<i> .vbs</i>. هذا هو الامتداد الخاص بالبرنامج النصي <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi>؛ أما البرنامج النصي <i><bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> </i>فيُشار إليه بالامتداد<i> .js</i>.
+  <li>ملف مصدر البرنامج النصي يحمل اللاحقة <i>.vbs</i>. هذه هي اللاحقة التي تشير إلى برنامج <i>نصي </i><bdi dir="ltr" class="odt-ltr-term">vbscript</bdi>، بينما يُشار إلى برنامج نصي <i><bdi dir="ltr" class="odt-ltr-term">javascript</bdi> </i>باللاحقة <i>.js</i>.
   </li>
 </ol>
 
-<p>يحتوي برنامج <em><bdi dir="ltr" class="odt-ltr-term">cscript</bdi></em> على خيارات تشغيل متنوعة، يمكن الاطلاع عليها عن طريق تشغيل <em><bdi dir="ltr" class="odt-ltr-term">cscript</bdi></em> بدون معلمات:</p>
+<p>يحتوي البرنامج <em><bdi dir="ltr" class="odt-ltr-term">cscript</bdi></em> على خيارات تشغيل متنوعة يمكن الحصول عليها عن طريق تشغيل <em><bdi dir="ltr" class="odt-ltr-term">cscript</bdi></em> بدون معلمات:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
@@ -696,39 +696,39 @@
 <a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">Utilisation</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">CScript</span><span class="w"> </span><span class="n">scriptname</span><span class="p">.</span><span class="n">extension</span><span class="w"> </span><span class="err">[option...] [arguments...]</span>
 <a id="__codelineno-2-7" name="__codelineno-2-7"></a>
 <a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="n">Options</span><span class="p">:</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="o">//</span><span class="n">B</span><span class="w">         </span><span class="n">batch</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Supprime</span><span class="w"> </span><span class="n">l</span><span class="c1">&#39;display of script prompts and errors</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="o">//</span><span class="n">D</span><span class="w">         </span><span class="n">Activer</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">d</span><span class="err">ébogage</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="o">//</span><span class="n">E</span><span class="p">:</span><span class="n">engine</span><span class="w">  </span><span class="n">Utiliser</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">moteur</span><span class="w"> </span><span class="n">pour</span><span class="w"> </span><span class="n">l</span><span class="c1">&#39;script execution</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="o">//</span><span class="n">H</span><span class="p">:</span><span class="n">CScript</span><span class="w"> </span><span class="n">Remplace</span><span class="w"> </span><span class="n">l</span><span class="c1">&#39;default script execution environment by CScript.exe</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="o">//</span><span class="n">H</span><span class="p">:</span><span class="n">WScript</span><span class="w"> </span><span class="n">tRemplace</span><span class="w"> </span><span class="n">l</span><span class="c1">&#39;default script execution environment via WScript.exe (default)</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="o">//</span><span class="n">I</span><span class="w">         </span><span class="n">Mode</span><span class="w"> </span><span class="n">interactif</span><span class="w"> </span><span class="p">(</span><span class="n">par</span><span class="w"> </span><span class="n">d</span><span class="err">éfaut, contraire de l&#39;option //B)</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="o">//</span><span class="n">Job</span><span class="w"> </span><span class="p">:</span><span class="n">xxxx</span><span class="w">    </span><span class="n">Ex</span><span class="err">écuter une tâche WSF</span>
-<a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="o">//</span><span class="n">Logo</span><span class="w">      </span><span class="n">Afficher</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">logo</span><span class="w"> </span><span class="p">(</span><span class="n">default</span><span class="p">)</span>
-<a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="o">//</span><span class="n">Nologo</span><span class="w">    </span><span class="n">Emp</span><span class="err">êcher l&#39;logo display: no banner displayed during runtime</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="o">//</span><span class="n">S</span><span class="w">         </span><span class="n">Enregistrer</span><span class="w"> </span><span class="n">les</span><span class="w"> </span><span class="n">options</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">ligne</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">commande</span><span class="w"> </span><span class="n">actuelles</span><span class="w"> </span><span class="n">pour</span><span class="w"> </span><span class="n">cet</span><span class="w"> </span><span class="n">utilisateur</span>
-<a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="o">//</span><span class="n">T</span><span class="p">:</span><span class="n">nn</span><span class="w">      </span><span class="n">Dur</span><span class="err">ée d&#39;execution in seconds: maximum time allowed for script execution</span>
-<a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="o">//</span><span class="n">X</span><span class="w">         </span><span class="n">Ex</span><span class="err">écuter un script dans le débogueur</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="o">//</span><span class="n">B</span><span class="w">          </span><span class="err">الدُفعة: يحذف عرض المطالبات وأخطاء البرامج النصية</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="o">//</span><span class="n">D</span><span class="w">          </span><span class="err">تنشيط التصحيح</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="o">//</span><span class="n">E</span><span class="p">:</span><span class="n">engine</span><span class="w">   </span><span class="err">استخدام المحرك لتنفيذ البرنامج النصي</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="o">//</span><span class="n">H</span><span class="p">:</span><span class="n">CScript</span><span class="w"> </span><span class="err">استبدال بيئة تنفيذ البرامج النصية الافتراضية بـ CScript.exe</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="o">//</span><span class="n">H</span><span class="p">:</span><span class="n">WScript</span><span class="w"> </span><span class="n">tRemplace</span><span class="w"> </span><span class="err">بيئة تنفيذ البرامج النصية الافتراضية بـ WScript.exe (الافتراضي)</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="o">//</span><span class="n">I</span><span class="w">          </span><span class="err">الوضع التفاعلي (افتراضيًا، عكس الخيار //B) </span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="o">//</span><span class="err">المهمة: xx   xx تنفيذ مهمة WSF</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="o">//</span><span class="n">Logo</span><span class="w">       </span><span class="err">عرض شعار (افتراضي)</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="o">//</span><span class="n">Nologo</span><span class="w">     </span><span class="err">منع عرض الشعار: لا يتم عرض أي شعار أثناء فترة التنفيذ</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="o">//</span><span class="n">S</span><span class="w">          </span><span class="err">حفظ خيارات سطر الأوامر الحالية لهذا المستخدم</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="o">//</span><span class="n">T</span><span class="p">:</span><span class="n">nn</span><span class="w">       </span><span class="err">مدة التنفيذ بالثواني: الحد  الأقصى المسموح به لتنفيذ البرنامج النصي</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="o">//</span><span class="n">X</span><span class="w">          </span><span class="err">تنفيذ البرنامج النصي في أداة التصحيح</span>
 </code></pre></div></td></tr></table></div>
-<p>تعمل الحجة <em>//<bdi dir="ltr" class="odt-ltr-term">nologo</bdi></em> على منع عرض شعار <bdi dir="ltr" class="odt-ltr-term">WSH:</bdi></p>
+<p>المعلمة <em>//<bdi dir="ltr" class="odt-ltr-term">nologo</bdi></em> تُزيل عرض شعار <bdi dir="ltr" class="odt-ltr-term">wsh:</bdi></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>C:\&gt;cscript //nologo coucou.vbs
 <a id="__codelineno-3-2" name="__codelineno-3-2"></a>coucou
 </code></pre></div></td></tr></table></div>
-<p><a id="refheading1871532734444"></a>
-<a id="toc535044781"></a></p>
-<h2 id="23-wsh">2.3. <span style="color: #4f81bd">بنية البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">WSH</bdi></span></h2>
-<p>لقد رأينا للتو أول نص برمجي لنا: <em><bdi dir="ltr" class="odt-ltr-term">hello.vbs</bdi></em></p>
+<p><span id="toc535044781" name="toc535044781" class="odt-bookmark-anchor"></span>
+<span id="refheading1871532734444" name="refheading1871532734444" class="odt-bookmark-anchor"></span></p>
+<h2 id="23-wsh">2.3. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">شكل البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">WSH</bdi></span></strong></span></h2>
+<p>لقد رأينا للتو البرنامج النصي الأول: <em><bdi dir="ltr" class="odt-ltr-term">coucou.vbs</bdi></em></p>
 <p><img src="images/10000000000000AD00000019ADCAAFD4.png" width="173" height="25" style="width:4.577cm;height:0.661cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000AD00000019ADCAAFD4.png" /></p>
-<p>ذكرنا أن امتداد الملف <em>.vbs</em> يشير إلى نص <em><bdi dir="ltr" class="odt-ltr-term">VBScript</bdi></em>. هذا ليس شرطًا. كان بإمكاننا وضع النص في ملف بامتداد <em>.wsf</em> بالشكل التالي الأكثر تعقيدًا:</p>
+<p>لقد أشرنا إلى أن اللاحقة <em>.vbs</em> للملف تشير إلى سكريبت <em><bdi dir="ltr" class="odt-ltr-term">vbscript</bdi></em>. وهذا ليس إلزامياً. كان بإمكاننا وضع السكريبت في ملف بلاحقة <em>.wsf</em> بالشكل التالي الأكثر تعقيداً:</p>
 <p><img src="images/10000000000000EC000000445ACF69C7.png" width="236" height="68" style="width:6.244cm;height:1.799cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000EC000000445ACF69C7.png" /></p>
-<p>يؤدي تشغيل هذا البرنامج النصي إلى إخراج النتيجة التالية:</p>
+<p>يؤدي تنفيذ هذا البرنامج النصي إلى النتيجة التالية:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>C:\&gt;cscript //nologo coucou2.wsf
 <a id="__codelineno-4-2" name="__codelineno-4-2"></a>coucou
 </code></pre></div></td></tr></table></div>
-<p>يمكن أن يخلط نص <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> بين اللغات:</p>
+<p>يمكن أن يخلط البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> بين اللغات:</p>
 <p><img src="images/1000000000000149000000C80D41B3C1.png" width="329" height="200" style="width:8.705cm;height:5.292cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000149000000C80D41B3C1.png" /></p>
-<p>يؤدي تشغيل هذا البرنامج النصي إلى إخراج ما يلي:</p>
+<p>يؤدي تنفيذ هذا البرنامج النصي إلى النتيجة التالية:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
 <span class="normal"><a href="#__codelineno-5-2">2</a></span>
 <span class="normal"><a href="#__codelineno-5-3">3</a></span>
@@ -737,86 +737,86 @@
 <a id="__codelineno-5-3" name="__codelineno-5-3"></a>coucou (javascript)
 <a id="__codelineno-5-4" name="__codelineno-5-4"></a>coucou (perlscript)
 </code></pre></div></td></tr></table></div>
-<p>سنلاحظ النقاط التالية:</p>
+<p>سنستخلص النقاط التالية:</p>
 <ol>
-  <li>حاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> غير مرتبطة بلغة معينة. يمكن لبرنامج نصي <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> أن يخلط بين اللغات داخل ملف بامتداد .wsf
+  <li>الحاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> غير مرتبطة بأي لغة. يمكن لبرنامج نصي wsh أن يخلط بين اللغات في ملف بامتداد .wsf
   </li>
-  <li>ثم يتم تضمين البرنامج النصي بين علامتي &lt;<bdi dir="ltr" class="odt-ltr-term">job id</bdi>=&quot;...&quot;&gt; ... &lt;/job&gt;
+  <li>يتم تضمين البرنامج النصي بين العلامات &lt;<bdi dir="ltr" class="odt-ltr-term">job id</bdi>=&quot;...&quot;&gt; ... &lt;/job&gt;
   </li>
-  <li>داخل التطبيق (=job)، يتم ترميز اللغات المستخدمة في أقسام الكود المختلفة بـ &lt;<bdi dir="ltr" class="odt-ltr-term">script language</bdi>=&quot;....&quot;&gt; .... &lt;/<bdi dir="ltr" class="odt-ltr-term">script</bdi>&gt;
+  <li>داخل التطبيق (=job)، يتم تمييز اللغات المستخدمة في الأجزاء المختلفة من الكود بعلامات &lt;<bdi dir="ltr" class="odt-ltr-term">script language</bdi>=&quot;....&quot;&gt; .... &lt;/<bdi dir="ltr" class="odt-ltr-term">script</bdi>&gt;
   </li>
-  <li>هذه اللغة الترميزية لها اسم: <bdi dir="ltr" class="odt-ltr-term">XML</bdi>، وهو اختصار لـ <bdi dir="ltr" class="odt-ltr-term">eXtended Markup Language.</bdi> لا تحدد <bdi dir="ltr" class="odt-ltr-term">XML</bdi> أي علامات بحد ذاتها، بل تحدد قواعد لتنظيم العلامات. لذلك، يجب أن نقول هنا إن لغة الترميز المستخدمة في نصوص <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> تتبع معيار <bdi dir="ltr" class="odt-ltr-term">XML.</bdi>
+  <li>هذه اللغة الترميزية تحمل اسمًا: <bdi dir="ltr" class="odt-ltr-term">XML</bdi>، وهو اختصار لـ «لغة الترميز <bdi dir="ltr" class="odt-ltr-term">eXtended</bdi>». أما <bdi dir="ltr" class="odt-ltr-term">XML</bdi> فلا تُعرِّف أي علامات، بل قواعد لتنظيم العلامات. لذلك، ينبغي أن نقول هنا إن لغة الترميز المستخدمة في برنامج نصي wsh تتبع المعيار <bdi dir="ltr" class="odt-ltr-term">XML.</bdi>
   </li>
 </ol>
 
-<p>من الآن فصاعدًا، سنستخدم <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> حصريًا في ملفات .<bdi dir="ltr" class="odt-ltr-term">vbs.</bdi></p>
-<p><a id="refheading1871732734444"></a>
-<a id="toc535044782"></a></p>
-<h2 id="24-wscript">2.4. <span style="color: #4f81bd">كائن <bdi dir="ltr" class="odt-ltr-term">WSCRIPT</bdi></span></h2>
-<p>يوفر حاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> للبرامج النصية التي تنفذها كائنًا يسمى <em><bdi dir="ltr" class="odt-ltr-term">wscript</bdi></em>. يحتوي الكائن على <strong>خصائص وأساليب</strong>:</p>
+<p>وبعد ذلك، سنستخدم لغة <bdi dir="ltr" class="odt-ltr-term">vbscript</bdi> حصريًّا في ملفات .<bdi dir="ltr" class="odt-ltr-term">vbs.</bdi></p>
+<p><span id="toc535044782" name="toc535044782" class="odt-bookmark-anchor"></span>
+<span id="refheading1871732734444" name="refheading1871732734444" class="odt-bookmark-anchor"></span></p>
+<h2 id="24-wscript">2.4. <span style="color: #4f81bd">الكائن <bdi dir="ltr" class="odt-ltr-term">WSCRIPT</bdi></span></h2>
+<p>يوفر الحاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> للبرامج النصية التي يقوم بتنفيذها كائنًا يُسمى <em><bdi dir="ltr" class="odt-ltr-term">wscript</bdi></em>. ويحتوي الكائن على <strong>خصائص وأساليب</strong>:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/1000000000000252000000DFD101E0DF.png" width="297" height="111" style="display:inline-block; margin:4px;width:7.858cm;height:2.949cm;" class="odt-zoomable" data-zoom-src="images/1000000000000252000000DFD101E0DF.png" /></td></tr></table>
 
-<p>يحتوي الكائن <em><bdi dir="ltr" class="odt-ltr-term">Obj</bdi></em> على خصائص <em><bdi dir="ltr" class="odt-ltr-term">Pi</bdi></em> تحدد حالته. وبالتالي، قد يحتوي كائن <em>مقياس الحرارة</em> على خاصية <em>درجة الحرارة</em>. هذه الخاصية هي أحد جوانب حالة مقياس الحرارة. وقد يكون جانب آخر هو درجة الحرارة القصوى <em><bdi dir="ltr" class="odt-ltr-term">Tmax</bdi></em> التي يمكنه تحملها.</p>
-<p>قد يحتوي كائن <em><bdi dir="ltr" class="odt-ltr-term">Obj</bdi></em> على طرق <em><bdi dir="ltr" class="odt-ltr-term">Mj</bdi></em> تسمح للعوامل الخارجية إما:</p>
+<p>يحتوي الكائن <em><bdi dir="ltr" class="odt-ltr-term">Obj</bdi></em> على خصائص <em><bdi dir="ltr" class="odt-ltr-term">Pi</bdi></em> التي تحدد حالته. وبالتالي، يمكن أن يحتوي الكائن <em><bdi dir="ltr" class="odt-ltr-term">thermomètre</bdi></em> على خاصية <em><bdi dir="ltr" class="odt-ltr-term">température</bdi></em>. هذه الخاصية هي أحد جوانب حالة مقياس الحرارة. وقد تكون خاصية أخرى هي درجة الحرارة القصوى <em><bdi dir="ltr" class="odt-ltr-term">Tmax</bdi></em> التي يمكن أن يتحملها.</p>
+<p>قد يحتوي الكائن <em><bdi dir="ltr" class="odt-ltr-term">Obj</bdi></em> على طرق <em><bdi dir="ltr" class="odt-ltr-term">Mj</bdi></em> التي تسمح للعوامل الخارجية إما:</p>
 <ul>
-  <li>تحديد حالته
+  <li>معرفة حالته
   </li>
   <li>تغيير حالته
   </li>
 </ul>
 
-<p>وبالتالي، فإن مقياس الحرارة الخاص بنا، إذا كان إلكترونيًا، يمكن أن يحتوي على طريقة <em><bdi dir="ltr" class="odt-ltr-term">turnOn</bdi></em> لتشغيله، وطريقة أخرى <em><bdi dir="ltr" class="odt-ltr-term">turnOff</bdi></em> لإيقاف تشغيله، <em>وطريقة</em> أخرى <em><bdi dir="ltr" class="odt-ltr-term">display</bdi></em> لعرض درجة حرارة التوازن بمجرد الوصول إليها. من الناحية البرمجية، الطريقة هي دالة يمكنها قبول المعاملات وإرجاع النتائج.</p>
-<p>في <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi>، تُكتب خصائص <bdi dir="ltr" class="odt-ltr-term">Pi</bdi> لكائن <bdi dir="ltr" class="odt-ltr-term">Obj</bdi> على النحو التالي: <em><bdi dir="ltr" class="odt-ltr-term">Obj.Pi</bdi></em>، وتُكتب طرق <bdi dir="ltr" class="odt-ltr-term">Mj</bdi> على النحو التالي: <em><bdi dir="ltr" class="odt-ltr-term">Obj.Mj</bdi></em>. يُعد كائن <bdi dir="ltr" class="odt-ltr-term">wscript</bdi> في <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> كائنًا مهمًا للطرق التي يتيحها للبرامج النصية. على سبيل المثال، تتيح لك طريقة <em><bdi dir="ltr" class="odt-ltr-term">echo</bdi></em> الخاصة به عرض رسالة. وصيغة هذه الطريقة هي كما يلي:</p>
+<p>وبالتالي، فإن مقياس الحرارة لدينا، إذا كان إلكترونيًا، قد يحتوي على طريقة <em><bdi dir="ltr" class="odt-ltr-term">allumer</bdi></em> لتشغيله، وطريقة أخرى <em><bdi dir="ltr" class="odt-ltr-term">éteindre</bdi></em> لإيقاف تشغيله، وطريقة ثالثة <em><bdi dir="ltr" class="odt-ltr-term">afficher</bdi></em> لعرض درجة حرارة التوازن بمجرد الوصول إليها. من الناحية البرمجية، الطريقة هي دالة يمكنها قبول معلمات وإرجاع نتائج.</p>
+<p>في <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi>، تُرمز خصائص <bdi dir="ltr" class="odt-ltr-term">Pi</bdi> لكائن <bdi dir="ltr" class="odt-ltr-term">Obj</bdi> بـ <em><bdi dir="ltr" class="odt-ltr-term">Obj.Pi</bdi></em>، وتُرمز الطرق <bdi dir="ltr" class="odt-ltr-term">Mj</bdi> بـ <em><bdi dir="ltr" class="odt-ltr-term">Obj.Mj</bdi></em>. يُعد الكائن <bdi dir="ltr" class="odt-ltr-term">wscript</bdi> في <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> كائنًا مهمًا للطرق التي يتيحها للبرامج النصية. وهكذا، تتيح طريقة <em><bdi dir="ltr" class="odt-ltr-term">echo</bdi></em> عرض رسالة. وصيغة هذه الطريقة هي كما يلي:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">wscript</span><span class="p">.</span><span class="n">echo</span><span class="w"> </span><span class="n">arg1</span><span class="p">,</span><span class="w"> </span><span class="n">arg2</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="n">argn</span>
 </code></pre></div>
-<p>ثم يتم عرض قيم الوسيطات <em><bdi dir="ltr" class="odt-ltr-term">arg1</bdi>، <bdi dir="ltr" class="odt-ltr-term">arg2</bdi>، ...، <bdi dir="ltr" class="odt-ltr-term">argn</bdi></em> في نافذة (عند التنفيذ عبر <bdi dir="ltr" class="odt-ltr-term">wscript</bdi>) أو على الشاشة (عند التنفيذ عبر <bdi dir="ltr" class="odt-ltr-term">cscript</bdi> في نظام <bdi dir="ltr" class="odt-ltr-term">DOS</bdi>).</p>
-<p><a id="refheading1871932734444"></a>
-<a id="toc535044783"></a></p>
+<p>ثم يتم عرض قيم المعلمات <em><bdi dir="ltr" class="odt-ltr-term">argi</bdi></em> في نافذة (عند التنفيذ بواسطة <bdi dir="ltr" class="odt-ltr-term">wscript</bdi>) أو على الشاشة (عند التنفيذ بواسطة <bdi dir="ltr" class="odt-ltr-term">cscript</bdi> ضمن <bdi dir="ltr" class="odt-ltr-term">DOS</bdi>).</p>
+<p><span id="toc535044783" name="toc535044783" class="odt-bookmark-anchor"></span>
+<span id="refheading1871932734444" name="refheading1871932734444" class="odt-bookmark-anchor"></span></p>
 <h2 id="25-internet-explorer">2.5. <span style="color: #4f81bd">حاوية <bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi></span></h2>
-<p>ذكرنا سابقًا أن <bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi> يمكن أن يعمل كحاوية لـ <bdi dir="ltr" class="odt-ltr-term">VBScript.</bdi> دعونا نوضح ذلك بمثال بسيط. فيما يلي صفحة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> (لغة ترميز النص التشعبي) باسم <em><bdi dir="ltr" class="odt-ltr-term">coucou2.htm</bdi></em> لا تحتوي على أي <bdi dir="ltr" class="odt-ltr-term">VBScript.</bdi></p>
+<p>ذكرنا سابقًا أن <bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi> يمكن أن يكون حاوية لبرنامج نصي <bdi dir="ltr" class="odt-ltr-term">vbscript.</bdi> لنوضح ذلك من خلال مثال بسيط. فيما يلي صفحة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> (لغة الترميز <strong><bdi dir="ltr" class="odt-ltr-term">HyperText</bdi></strong>) تسمى <em><bdi dir="ltr" class="odt-ltr-term">coucou2.htm</bdi></em> ولا تحتوي على برنامج نصي <bdi dir="ltr" class="odt-ltr-term">vbscript.</bdi></p>
 <p>21</p>
 <p><img src="images/100000000000014400000074F8C78C12.png" width="324" height="116" style="width:8.573cm;height:3.069cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000014400000074F8C78C12.png" /></p>
-<p>يؤدي تحميلها مباشرة في <bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi> (<em>ملف/فتح</em>) إلى النتائج التالية:</p>
+<p>يؤدي تحميلها مباشرةً عبر متصفح <bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi> (<em><bdi dir="ltr" class="odt-ltr-term">Fichier/Ouvrir</bdi></em>) إلى النتائج التالية:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/100000000000038F00000188C838B150.png" width="456" height="196" style="display:inline-block; margin:4px;width:12.053cm;height:5.186cm;" class="odt-zoomable" data-zoom-src="images/100000000000038F00000188C838B150.png" /></td></tr></table>
 
-<p>يُظهر محتوى ملف <em><bdi dir="ltr" class="odt-ltr-term">coucou2.htm</bdi></em> أن <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> هي لغة ترميز. ومعرفة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> تعني معرفة هذه العلامات. والغرض الرئيسي منها هو إخبار المتصفح بكيفية عرض المستند. ولا تتبع <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> معيار <bdi dir="ltr" class="odt-ltr-term">XML</bdi> بشكل صارم، ولكنها تشبهه.</p>
-<p>في <em>ملف <bdi dir="ltr" class="odt-ltr-term">coucou2</bdi></em>.htm، توجد معلومتان تم تمييزهما بالرقمين 1 و2. وقد قمنا أيضًا بتضمينهما في العرض النهائي. أدت العلامة <em>&lt;<bdi dir="ltr" class="odt-ltr-term">title</bdi>&gt;...&lt;/<bdi dir="ltr" class="odt-ltr-term">title</bdi>&gt;</em> إلى وضع المعلومة 1 في شريط عنوان المتصفح، بينما أدت العلامة <em>&lt;<bdi dir="ltr" class="odt-ltr-term">body</bdi>&gt;..&lt;/<bdi dir="ltr" class="odt-ltr-term">body</bdi>&gt;</em> إلى وضع المعلومة 2 في منطقة المستند بالمتصفح.</p>
-<p>لن نتعمق أكثر في <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> دعونا نعدل الملف <em><bdi dir="ltr" class="odt-ltr-term">coucou2.htm</bdi></em> بإضافة <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> ونعيد تسميته إلى <em><bdi dir="ltr" class="odt-ltr-term">coucou1.htm</bdi></em>:</p>
+<p>يُظهر محتوى الملف <em><bdi dir="ltr" class="odt-ltr-term">coucou2.htm</bdi></em> أن <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> هي لغة ترميز. إن معرفة لغة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> تعني معرفة هذه العلامات. والغرض الرئيسي من هذه العلامات هو إرشاد المتصفح إلى كيفية عرض المستند. لا تتبع <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> معيار <bdi dir="ltr" class="odt-ltr-term">XML</bdi> بدقة، لكنها قريبة منه.</p>
+<p>في <em><bdi dir="ltr" class="odt-ltr-term">coucou2.htm</bdi></em>، توجد معلومتان يجب عرضهما، وهما 1 و2. وقد قمنا بعرضهما أيضًا في الشاشة التي تم إنشاؤها. العلامة <em>&lt;<bdi dir="ltr" class="odt-ltr-term">title</bdi>&gt;...&lt;/<bdi dir="ltr" class="odt-ltr-term">title</bdi>&gt;</em> هي التي أدت إلى وضع المعلومة 1 في شريط عنوان المتصفح، أما العلامة <em>&lt;<bdi dir="ltr" class="odt-ltr-term">body</bdi>&gt;..&lt;/<bdi dir="ltr" class="odt-ltr-term">body</bdi>&gt;</em> فهي التي أدت إلى وضع المعلومة 2 في جزء المستند من المتصفح.</p>
+<p>لن نتعمق أكثر في دراسة لغة <bdi dir="ltr" class="odt-ltr-term">HTML.</bdi> لنقم بتعديل الملف <em><bdi dir="ltr" class="odt-ltr-term">coucou2.htm</bdi></em> بإدخال نص برمجي <bdi dir="ltr" class="odt-ltr-term">vbscript</bdi> فيه، ولنسماه الآن <em><bdi dir="ltr" class="odt-ltr-term">coucou1.htm</bdi></em>:</p>
 <p><img src="images/1000000000000289000000920A3BF436.png" width="604" height="136" style="width:15.981cm;height:3.595cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000289000000920A3BF436.png" /></p>
-<p>تم وضع <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> داخل العلامات <em>&lt;<bdi dir="ltr" class="odt-ltr-term">head</bdi>&gt;...&lt;/<bdi dir="ltr" class="odt-ltr-term">head</bdi>&gt;</em>. كان من الممكن وضعه في مكان آخر. يعرض &quot;<bdi dir="ltr" class="odt-ltr-term">hello</bdi>&quot; عند تحميل الصفحة لأول مرة. هنا، يجب أن يكون المتصفح هو <bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi>، حيث أن هذا المتصفح هو الحاوية الافتراضية لـ <bdi dir="ltr" class="odt-ltr-term">VBScripts.</bdi> العرض الناتج هو كما يلي:</p>
+<p>تم وضع البرنامج النصي <bdi dir="ltr" class="odt-ltr-term">vbscript</bdi> داخل العلامة <em>&lt;<bdi dir="ltr" class="odt-ltr-term">head</bdi>&gt;...&lt;/<bdi dir="ltr" class="odt-ltr-term">head</bdi>&gt;</em>. وكان من الممكن وضعه في مكان آخر. يعرض البرنامج النصي عبارة «<bdi dir="ltr" class="odt-ltr-term">coucou</bdi>» عند التحميل الأولي للصفحة. هنا، يجب أن يكون المتصفح هو <bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi> لأن هذا المتصفح هو الوحيد الذي يدعم بشكل افتراضي البرامج النصية <bdi dir="ltr" class="odt-ltr-term">vbscript.</bdi> ويكون العرض الناتج كما يلي:</p>
 <p><img src="images/10000000000000C2000000765F603384.png" width="194" height="118" style="width:5.133cm;height:3.122cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000C2000000765F603384.png" /></p>
-<p>يتبع ذلك العرض العادي للصفحة:</p>
+<p>يتبعه العرض العادي للصفحة:</p>
 <p><img src="images/10000000000001B80000009CC27983F3.png" width="440" height="156" style="width:11.642cm;height:4.128cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B80000009CC27983F3.png" /></p>
-<p>كان البرنامج النصي الذي تم تنفيذه كما يلي:</p>
+<p>وكان البرنامج النصي الذي تم تنفيذه كما يلي:</p>
 <p><img src="images/10000000000000D70000002DC732857C.png" width="215" height="45" style="width:5.689cm;height:1.191cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000D70000002DC732857C.png" /></p>
-<p>بينما زودت حاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> البرنامج النصي بكائن يسمى <em><bdi dir="ltr" class="odt-ltr-term">wscript</bdi></em> يسمح بالإخراج باستخدام طريقة <em><bdi dir="ltr" class="odt-ltr-term">echo</bdi></em> الخاصة به، فإن <bdi dir="ltr" class="odt-ltr-term">IE</bdi> هنا يزود البرنامج النصي بكائن <em><bdi dir="ltr" class="odt-ltr-term">window</bdi></em> يسمح بالإخراج باستخدام طريقة <em><bdi dir="ltr" class="odt-ltr-term">alert</bdi></em>. وبالتالي، لعرض &quot;<bdi dir="ltr" class="odt-ltr-term">hello</bdi>&quot;، نكتب <em><bdi dir="ltr" class="odt-ltr-term">wscript.echo</bdi> &quot;<bdi dir="ltr" class="odt-ltr-term">hello</bdi>&quot;</em> في <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> و <em><bdi dir="ltr" class="odt-ltr-term">window.alert</bdi> &quot;<bdi dir="ltr" class="odt-ltr-term">hello</bdi>&quot;</em> في <bdi dir="ltr" class="odt-ltr-term">IE.</bdi> يمكننا أيضًا أن نوضح هنا أنه، في الواقع، يمكن استخدام لغات متعددة داخل حاوية <bdi dir="ltr" class="odt-ltr-term">IE.</bdi> سنعيد النظر في المثال الذي تم تقديمه بالفعل في <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> ضمن صفحة <em>تسمى <bdi dir="ltr" class="odt-ltr-term">hello3.htm</bdi></em>:</p>
+<p>في حين أن الحاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> كانت توفر للبرنامج النصي كائنًا يُسمى <em><bdi dir="ltr" class="odt-ltr-term">wscript</bdi></em> يُتيح عرض البيانات باستخدام طريقته <bdi dir="ltr" class="odt-ltr-term">echo</bdi>، فإن <bdi dir="ltr" class="odt-ltr-term">IE</bdi> هنا توفر للبرنامج النصي كائنًا <em>باسم <bdi dir="ltr" class="odt-ltr-term">window</bdi>،</em> مما يسمح بعرض البيانات باستخدام الطريقة <em><bdi dir="ltr" class="odt-ltr-term">alert</bdi></em>. وبالتالي، لعرض «<bdi dir="ltr" class="odt-ltr-term">coucou</bdi>»، نكتب <em><bdi dir="ltr" class="odt-ltr-term">wscript.echo</bdi> «<bdi dir="ltr" class="odt-ltr-term">coucou</bdi>»</em> في <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> <em>و<bdi dir="ltr" class="odt-ltr-term">window.alert</bdi> «<bdi dir="ltr" class="odt-ltr-term">coucou</bdi>»</em> في <bdi dir="ltr" class="odt-ltr-term">IE.</bdi> يمكننا أن نوضح هنا أيضًا أنه يمكن في الواقع استخدام عدة لغات داخل الحاوية <bdi dir="ltr" class="odt-ltr-term">IE.</bdi> نستعيد المثال الذي سبق عرضه في <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> داخل صفحة <em><bdi dir="ltr" class="odt-ltr-term">coucou3.htm</bdi></em>:</p>
 <p><img src="images/10000000000002A40000011AA4BEDFB1.png" width="604" height="252" style="width:15.981cm;height:6.668cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002A40000011AA4BEDFB1.png" /></p>
-<p>عندما يقوم <bdi dir="ltr" class="odt-ltr-term">IE</bdi> بتحميل هذه الصفحة، فإنه يعرض أولاً ثلاث نوافذ معلومات:</p>
+<p>يؤدي تحميل هذه الصفحة بواسطة <bdi dir="ltr" class="odt-ltr-term">IE</bdi> إلى عرض ثلاث نوافذ معلومات أولاً:</p>
 <table dir="rtl" class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000C200000077F09A77D4.png" width="194" height="119" style="display:inline-block; margin:4px;width:5.133cm;height:3.149cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C200000077F09A77D4.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000C100000076C652CBA1.png" width="193" height="118" style="display:inline-block; margin:4px;width:5.106cm;height:3.122cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C100000076C652CBA1.png" /></td><td dir="rtl" style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: right;"><img src="images/10000000000000C100000075460B483D.png" width="193" height="117" style="display:inline-block; margin:4px;width:5.106cm;height:3.096cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C100000075460B483D.png" /></td></tr></table>
 
 <p>قبل عرض الصفحة النهائية:</p>
 <p><img src="images/10000000000001F90000005B68D2F44C.png" width="505" height="91" style="width:13.361cm;height:2.408cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001F90000005B68D2F44C.png" /></p>
-<p><a id="refheading1872132734444"></a>
-<a id="toc535044784"></a></p>
-<h2 id="26-wsh">2.6. <span style="color: #4f81bd">مساعدة <bdi dir="ltr" class="odt-ltr-term">WSH</bdi></span></h2>
-<p>يأتي <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> مزودًا بنظام مساعدة يقع عادةً في المجلد &quot;<bdi dir="ltr" class="odt-ltr-term">C:</bdi>\<bdi dir="ltr" class="odt-ltr-term">Program Files</bdi>\<bdi dir="ltr" class="odt-ltr-term">Microsoft Windows Script</bdi>\<bdi dir="ltr" class="odt-ltr-term">ScriptDocs</bdi>&quot;. بالنسبة للإصدار 5.6 من <bdi dir="ltr" class="odt-ltr-term">WSH</bdi>، يُسمى ملف المساعدة &quot;<bdi dir="ltr" class="odt-ltr-term">SCRIPT56.CHM</bdi>&quot;. ما عليك سوى النقر المزدوج على هذا الملف للوصول إلى المساعدة. قد يكون من المفيد إنشاء اختصار له على سطح المكتب.</p>
-<p>بمجرد تشغيله، سترى شيئًا مثل هذا:</p>
+<p><span id="toc535044784" name="toc535044784" class="odt-bookmark-anchor"></span>
+<span id="refheading1872132734444" name="refheading1872132734444" class="odt-bookmark-anchor"></span></p>
+<h2 id="26-wsh">2.6. <span style="color: #4f81bd">يأتي برنامج المساعدة الخاص بـ <bdi dir="ltr" class="odt-ltr-term">WSH</bdi></span></h2>
+<p>يأتي برنامج <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> مزودًا بنظام مساعدة يقع عادةً في المجلد &quot;<bdi dir="ltr" class="odt-ltr-term">C:</bdi>\<bdi dir="ltr" class="odt-ltr-term">Program Files</bdi>\<bdi dir="ltr" class="odt-ltr-term">Microsoft Windows Script</bdi>\<bdi dir="ltr" class="odt-ltr-term">ScriptDocs</bdi>&quot;. بالنسبة للإصدار 5.6 من <bdi dir="ltr" class="odt-ltr-term">WSH</bdi>، يُسمى ملف المساعدة «<bdi dir="ltr" class="odt-ltr-term">SCRIPT56.CHM</bdi>». يكفي النقر مرتين على هذا الملف للوصول إلى المساعدة. قد يكون من المفيد إنشاء اختصار له على سطح المكتب.</p>
+<p>بمجرد تشغيله، ستظهر لك شاشة تشبه ما يلي:</p>
 <p><img src="images/10000000000000F1000000B609492925.png" width="241" height="182" style="width:6.376cm;height:4.815cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000F1000000B609492925.png" /></p>
-<p>يحتوي على تعليمات خاصة بحاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> وكذلك بلغات <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> و <bdi dir="ltr" class="odt-ltr-term">JavaScript.</bdi> وهو أداة لا غنى عنها لكل من المبرمجين المبتدئين وذوي الخبرة. هناك عدة طرق للعمل مع هذه التعليمات:</p>
+<p>يحتوي هذا الملف على تعليمات الحاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> بالإضافة إلى تعليمات لغتي <bdi dir="ltr" class="odt-ltr-term">vbscript</bdi> و <bdi dir="ltr" class="odt-ltr-term">javascript.</bdi> إنها أداة لا غنى عنها لكل من المبتدئين والمبرمجين المتمرسين. هناك عدة طرق للاستفادة من هذه التعليمات:</p>
 <ul>
-  <li>لست متأكدًا تمامًا مما تبحث عنه. تريد فقط استكشاف ما هو متاح. في هذه الحالة، يمكنك استخدام علامة التبويب &quot;<i>جدول المحتويات</i>&quot; أعلاه. على سبيل المثال، يمكنك الاطلاع على ما هو متاح لـ <bdi dir="ltr" class="odt-ltr-term">VBScript:</bdi>
+  <li>إذا لم نكن متأكدين تمامًا مما نبحث عنه، ونريد فقط اكتشاف ما هو متاح، فيمكننا عندئذٍ استخدام علامة التبويب <i><bdi dir="ltr" class="odt-ltr-term">Sommaire</bdi> </i>المذكورة أعلاه. يمكننا، على سبيل المثال، الاطلاع على ما هو متاح لـ <bdi dir="ltr" class="odt-ltr-term">vbscript:</bdi>
   </li>
 </ul>
 
 <p><img src="images/10000000000001DA0000020FBC4A7ED8.png" width="474" height="527" style="width:12.541cm;height:13.944cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001DA0000020FBC4A7ED8.png" /></p>
-<p>ستجد الكثير من المعلومات في تعليمات <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> غير مدرجة في هذا المستند.</p>
+<p>ستجد في دليل <bdi dir="ltr" class="odt-ltr-term">VBscript</bdi> العديد من المعلومات التي لا ترد في هذا المستند.</p>
 <ul>
-  <li>يمكنك البحث عن شيء محدد، مثل كيفية استخدام دالة <i><bdi dir="ltr" class="odt-ltr-term">MsgBox</bdi></i> في <bdi dir="ltr" class="odt-ltr-term">VBScript.</bdi> في هذه الحالة، استخدم علامة التبويب <i>&quot;بحث</i>&quot;:
+  <li>يمكنك البحث عن شيء محدد، على سبيل المثال كيفية استخدام الدالة <i><bdi dir="ltr" class="odt-ltr-term">msgbox</bdi> </i>في <bdi dir="ltr" class="odt-ltr-term">VBscript.</bdi> استخدم في هذه الحالة علامة التبويب <i><bdi dir="ltr" class="odt-ltr-term">Rechercher</bdi></i>:
   </li>
 </ul>
 
 <p><img src="images/10000000000000EA00000156DCCA294C.png" width="234" height="342" style="width:6.191cm;height:9.049cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000EA00000156DCCA294C.png" /></p>
-<p>تعرض المساعدة جميع الموضوعات المتعلقة بمصطلح البحث. بشكل عام، تكون الموضوعات الأولى المقترحة هي الأكثر صلة. وهذا هو الحال هنا، حيث الموضوع الأول المقترح هو الموضوع الصحيح. ما عليك سوى النقر عليه مرتين لعرض المعلومات الخاصة بهذا الموضوع:</p>
+<p>يعرض «المساعدة» جميع العناوين ذات الصلة بالكلمة التي تم البحث عنها. وبشكل عام، تكون العناوين الأولى المقترحة هي الأكثر صلة بالموضوع. وهذا هو الحال هنا، حيث يكون العنوان الأول المقترح هو العنوان الصحيح. يكفي النقر عليه مرتين للحصول على المعلومات المتعلقة بهذا العنوان:</p>
 <p><img src="images/10000000000002FC000000C168A18C2C.png" width="604" height="153" style="width:15.981cm;height:4.038cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002FC000000C168A18C2C.png" /></p>
 
 

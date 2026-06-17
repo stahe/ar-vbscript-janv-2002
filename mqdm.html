@@ -18,7 +18,7 @@
         <link rel="prev" href="index.html">
       
       
-        <link rel="next" href="syqt-tnfydh-vbscript.html">
+        <link rel="next" href="syqt-tshyl-vbscript.html">
       
       
         
@@ -342,14 +342,14 @@
   
   
     <li class="md-nav__item">
-      <a href="syqt-tnfydh-vbscript.html" class="md-nav__link">
+      <a href="syqt-tshyl-vbscript.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. سياقات تنفيذ VBSCRIPT
+    2. سياقات تشغيل VBSCRIPT
   
 
     
@@ -369,14 +369,14 @@
   
   
     <li class="md-nav__item">
-      <a href="ssyt-brmj-vbscript.html" class="md-nav__link">
+      <a href="ssyt-lbrmj-vbscript.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. أساسيات برمجة VBScript
+    3. أساسيات البرمجة VBSCRIPT
   
 
     
@@ -396,14 +396,14 @@
   
   
     <li class="md-nav__item">
-      <a href="mlj-lkh.html" class="md-nav__link">
+      <a href="dr-lkh.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    4. معالجة الأخطاء
+    4. إدارة الأخطاء
   
 
     
@@ -487,18 +487,18 @@
 
 
 
-<h1 id="1">1. <span style="color: #365f91">مقدمة</span></h1>
-<p>ملف <bdi dir="ltr" class="odt-ltr-term">PDF</bdi> لهذا المستند متاح |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQCvExv4yQ-CR5xgFef7rViFAUeEfEZyq7lQtKm9ZYdalxU?e=wtbgcQ">هنا</a>|.</p>
-<p>الغرض من هذا المستند هو تقديم أساسيات لغة <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> بالإضافة إلى أمثلة على استخدامها في مجالات مختلفة. <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> هي لغة برمجة نصية لنظام <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi> يمكن تشغيلها في بيئات مختلفة مثل</p>
+<h1 id="1">1. <span style="color: #365f91"><strong><span style="color: #365f91">مقدمة</span></strong></span></h1>
+<p>يتوفر ملف <bdi dir="ltr" class="odt-ltr-term">PDF</bdi> الخاص بهذا المستند |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQCvExv4yQ-CR5xgFef7rViFAUeEfEZyq7lQtKm9ZYdalxU?e=dnRDHW"><bdi dir="ltr" class="odt-ltr-term">HERE</bdi></a>|.</p>
+<p>يهدف هذا المستند إلى توفير أساسيات لغة <bdi dir="ltr" class="odt-ltr-term">vbscript</bdi> بالإضافة إلى أمثلة على استخدامها في مجالات مختلفة. <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> هي لغة برمجة نصية تعمل على نظام <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi> ويمكنها العمل في بيئات مختلفة مثل</p>
 <ul>
-<li><em><bdi dir="ltr" class="odt-ltr-term">Windows Scripting Host</bdi></em> للاستخدام المباشر في <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، خاصة لكتابة نصوص برمجية لإدارة النظام</li>
-<li><em><bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi></em>. ثم يتم استخدامها داخل صفحات <bdi dir="ltr" class="odt-ltr-term">HTML</bdi>، حيث تضيف مستوى من التفاعل لا يمكن تحقيقه باستخدام <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> وحده.</li>
-<li><em><bdi dir="ltr" class="odt-ltr-term">Internet Information Server</bdi></em> (<bdi dir="ltr" class="odt-ltr-term">IIS</bdi>)، خادم الويب الخاص بـ <bdi dir="ltr" class="odt-ltr-term">Microsoft</bdi> على <bdi dir="ltr" class="odt-ltr-term">NT/2000</bdi>، وما يعادله، <em><bdi dir="ltr" class="odt-ltr-term">Personal Web Server</bdi></em> (<bdi dir="ltr" class="odt-ltr-term">PWS</bdi>)، على <bdi dir="ltr" class="odt-ltr-term">Win9x.</bdi> في هذه الحالة، تُستخدم <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> لبرمجة الويب من جانب الخادم، وهي تقنية تشير إليها <bdi dir="ltr" class="odt-ltr-term">Microsoft</bdi> باسم <bdi dir="ltr" class="odt-ltr-term">ASP</bdi> (<em><bdi dir="ltr" class="odt-ltr-term">Active Server Pages</bdi></em>).</li>
+<li><em><bdi dir="ltr" class="odt-ltr-term">Windows Scripting Host</bdi></em> للاستخدام المباشر في نظام <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، لا سيما لكتابة نصوص برمجية لإدارة النظام</li>
+<li><em><bdi dir="ltr" class="odt-ltr-term">Internet Explorer</bdi></em>. ويُستخدم في هذه الحالة ضمن صفحات <bdi dir="ltr" class="odt-ltr-term">HTML</bdi>، حيث يضفي عليها قدرًا من التفاعلية يتعذر تحقيقه باستخدام لغة <bdi dir="ltr" class="odt-ltr-term">HTML</bdi> وحدها.</li>
+<li><em><bdi dir="ltr" class="odt-ltr-term">Internet Information Server</bdi></em> (<bdi dir="ltr" class="odt-ltr-term">IIS</bdi>)، وهو خادم الويب الخاص بشركة مايكروسوفت على نظام <bdi dir="ltr" class="odt-ltr-term">NT/2000</bdi>، ونظيره <em><bdi dir="ltr" class="odt-ltr-term">Personal Web Server</bdi></em> (<bdi dir="ltr" class="odt-ltr-term">PWS</bdi>) على نظام <bdi dir="ltr" class="odt-ltr-term">Win9x.</bdi> في هذه الحالة، يُستخدم <bdi dir="ltr" class="odt-ltr-term">vbscript</bdi> للبرمجة من جانب خادم الويب، وهي تقنية تسميها مايكروسوفت <bdi dir="ltr" class="odt-ltr-term">ASP</bdi> (<em><bdi dir="ltr" class="odt-ltr-term">Active Server Pages</bdi></em>).</li>
 </ul>
-<p>علاوة على ذلك، نظرًا لأن <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> هي لغة مشتقة من <bdi dir="ltr" class="odt-ltr-term">Visual Basic for Windows</bdi>، فإنها يمكن أن تكون بمثابة مقدمة لهذه اللغة — وهي واحدة من أكثر اللغات استخدامًا في بيئة <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> — وكذلك لإصدار <em>التطبيق</em> من <bdi dir="ltr" class="odt-ltr-term">VB</bdi>، المعروف باسم <strong><bdi dir="ltr" class="odt-ltr-term">VBA</bdi></strong> (<bdi dir="ltr" class="odt-ltr-term">Visual Basic for Applications</bdi>). تُستخدم <bdi dir="ltr" class="odt-ltr-term">VBA</bdi>، على سبيل المثال، في جميع أنحاء مجموعة <bdi dir="ltr" class="odt-ltr-term">Microsoft Office</bdi>، ولا سيما في <bdi dir="ltr" class="odt-ltr-term">Excel.</bdi> وبالتالي، تعمل <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> كبوابة للتطوير عبر مجموعة واسعة من تطبيقات <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi></p>
-<p><bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> ليست لغة موجهة للكائنات، على الرغم من أنها تحتوي على بعض الميزات الموجهة للكائنات. على سبيل المثال، لا يوجد مفهوم الوراثة. ومع ذلك، يمكنها استخدام الكائنات التي يتيحها لها الحاوية التي تعمل فيها، وكذلك، بشكل عام، مكونات <bdi dir="ltr" class="odt-ltr-term">ActiveX</bdi> المتوفرة على جهاز <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi> هذا الجانب هو الذي يمنح <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> قوتها؛ فهي لغة محدودة جدًا في جوهرها، ولكن بفضل الكائنات المتاحة لها، يمكنها منافسة لغات البرمجة النصية الأكثر ثراءً في البداية، مثل <bdi dir="ltr" class="odt-ltr-term">Perl</bdi> و <bdi dir="ltr" class="odt-ltr-term">JavaScript</bdi> و <bdi dir="ltr" class="odt-ltr-term">Python.</bdi> إنها لغة سهلة التعلم والاستخدام، وتمهد الطريق لاستخدام <bdi dir="ltr" class="odt-ltr-term">Visual Basic for Windows</bdi>، التي اشتقت منها مباشرةً.</p>
-<p><strong>هذا المستند ليس دورة تدريبية في الخوارزميات</strong>. يُفترض إتقان فن البرمجة. يتطلب الأمر قراءة نشطة. ربما تكون أفضل طريقة لاستخدام هذا المستند هي اختبار الأمثلة المقدمة هنا على جهازك الخاص. عادةً ما يتم تضمين حاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> بشكل قياسي مع نظام <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi> يتوفر أحدث إصدار مجانًا على موقع <bdi dir="ltr" class="odt-ltr-term">Microsoft</bdi> (<bdi dir="ltr" class="odt-ltr-term">http://www.microsoft.com</bdi>). للعثور على عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الدقيق لتنزيل <bdi dir="ltr" class="odt-ltr-term">WSH</bdi>، يمكنك البحث عن الكلمات الرئيسية &quot;<bdi dir="ltr" class="odt-ltr-term">Windows Scripting</bdi>&quot; باستخدام محرك بحث على الويب. من بين النتائج، ستجد عنوان <bdi dir="ltr" class="odt-ltr-term">URL</bdi> لتنزيل <bdi dir="ltr" class="odt-ltr-term">WSH.</bdi></p>
-<p>سيرج تاهي، يناير 2002</p>
+<p>من ناحية أخرى، نظرًا لأن لغة <bdi dir="ltr" class="odt-ltr-term">VBSCRIPT</bdi> هي لغة مشتقة من <bdi dir="ltr" class="odt-ltr-term">Visual Basic</bdi> لـ <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، فإنها يمكن أن تكون بمثابة مقدمة لهذه اللغة التي تُعد من بين أكثر اللغات انتشارًا في بيئة <bdi dir="ltr" class="odt-ltr-term">Windows</bdi>، وكذلك للإصدار <em><bdi dir="ltr" class="odt-ltr-term">Application</bdi></em> من <bdi dir="ltr" class="odt-ltr-term">VB</bdi>، والمعروف باسم <strong><bdi dir="ltr" class="odt-ltr-term">VBA</bdi></strong> (<bdi dir="ltr" class="odt-ltr-term">Visual Basic for Applications</bdi>). يُستخدم <bdi dir="ltr" class="odt-ltr-term">VBA</bdi>، على سبيل المثال، في مجموعة برامج <bdi dir="ltr" class="odt-ltr-term">Office</bdi> من <bdi dir="ltr" class="odt-ltr-term">Microsoft</bdi>، ولا سيما في برنامج <bdi dir="ltr" class="odt-ltr-term">Excel.</bdi> وبالتالي، فإن <bdi dir="ltr" class="odt-ltr-term">VBSCRIPT</bdi> يُعد بوابة للدخول إلى عالم تطوير التطبيقات في مجال واسع من تطبيقات <bdi dir="ltr" class="odt-ltr-term">Windows.</bdi></p>
+<p><bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> ليست لغة كائنية، على الرغم من أنها تتسم ببعض سمات البرمجة الكائنية. فمفهوم «الوراثة»، على سبيل المثال، غير موجود. ومع ذلك، يمكنها استخدام الكائنات التي يتيحها لها الحاوية التي تعمل فيها، وكذلك بشكل عام مكونات <bdi dir="ltr" class="odt-ltr-term">ActiveX</bdi> المتوفرة على جهاز ويندوز. وهذا الجانب هو ما يمنح <bdi dir="ltr" class="odt-ltr-term">VBScript</bdi> قوتها، فهي لغة فقيرة في جوهرها، لكنها بفضل الكائنات المتاحة لها يمكنها منافسة لغات البرمجة النصية الأكثر ثراءً في البداية مثل <bdi dir="ltr" class="odt-ltr-term">Perl</bdi> و<bdi dir="ltr" class="odt-ltr-term">Javascript</bdi> و<bdi dir="ltr" class="odt-ltr-term">Python.</bdi> إنها لغة سهلة التعلم والاستخدام، وتفتح الطريق لاستخدام <bdi dir="ltr" class="odt-ltr-term">Visual Basic</bdi> لـ <bdi dir="ltr" class="odt-ltr-term">Windows</bdi> التي اشتقت منها مباشرةً.</p>
+<p><strong>هذا المستند ليس دورة دراسية في علم الخوارزميات</strong>. يُفترض أن يكون القارئ على دراية بفن البرمجة. ويتطلب الأمر قراءة نشطة. ولعل أفضل طريقة للاستفادة من هذا المستند هي اختبار الأمثلة الواردة فيه على جهازك الخاص. عادةً ما يأتي الحاوية <bdi dir="ltr" class="odt-ltr-term">WSH</bdi> مدمجة بشكل قياسي مع نظام ويندوز. تتوفر أحدث نسخة مجانًا على موقع مايكروسوفت (<bdi dir="ltr" class="odt-ltr-term">http://www.microsoft.com</bdi>). للعثور على ملف <bdi dir="ltr" class="odt-ltr-term">URL</bdi> المناسب الذي يسمح بتنزيل ملف <bdi dir="ltr" class="odt-ltr-term">WSH</bdi>، يمكن البحث عن الكلمات المفتاحية «<bdi dir="ltr" class="odt-ltr-term">Windows Scripting</bdi>» باستخدام محرك بحث على الويب. ومن بين النتائج، من المفترض أن تجد ملف <bdi dir="ltr" class="odt-ltr-term">URL</bdi> الخاص بتنزيل ملف <bdi dir="ltr" class="odt-ltr-term">WSH.</bdi></p>
+<p><bdi dir="ltr" class="odt-ltr-term">Serge Tahé</bdi>، يناير 2002</p>
 
 
 
